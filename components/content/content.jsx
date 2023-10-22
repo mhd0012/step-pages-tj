@@ -71,19 +71,14 @@ const Content = () => {
             </h3>
 
 
-            {currentIndex === 0 ? (<PageOne/>) :
-            currentIndex === 1 ? (<PageTow/>) :
-            currentIndex === 2 ? (<PageThree/>) :
-            currentIndex === 3 ? (<PageFour/>) :
-            currentIndex === 4 ? (<PageFive/>) :
-            (<div>Sorry</div>)}
-
-            {/*{currentIndex === 0 && <PageOne/>}*/}
-            {/*{currentIndex === 1 && <PageTow/>}*/}
-            {/*{currentIndex === 2 && <PageThree/>}*/}
-            {/*{currentIndex === 3 && <PageFour/>}*/}
-            {/*{currentIndex === 4 && <PageFive/>}*/}
-            {/*{currentIndex !== && <PageFive/>}*/}
+            <div style={{height:'420px'}}>
+                {currentIndex === 0 ? (<PageOne/>) :
+                    currentIndex === 1 ? (<PageTow/>) :
+                        currentIndex === 2 ? (<PageThree/>) :
+                            currentIndex === 3 ? (<PageFour/>) :
+                                currentIndex === 4 ? (<PageFive/>) :
+                                    (<div>Sorry</div>)}
+            </div>
 
 
             <button onClick={handlePrev}>قبلی</button>
