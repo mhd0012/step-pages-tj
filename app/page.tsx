@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
-import Content from '../components/content/content'
+import MultiStep from '@/components/MultiStep'
 
 export default function Home() {
   return (
     <div>
 
-      <Content/>
+      <MultiStep/>
 
     </div>
   )
